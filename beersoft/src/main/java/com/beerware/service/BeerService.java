@@ -15,7 +15,7 @@ public class BeerService {
 	}
 	
 	public Beer getBeerById(Integer id){
-		return beerRepository.findByBeerId(id);
+		return beerRepository.findById(id);
 	}
 	
 	public String getBeers(){
