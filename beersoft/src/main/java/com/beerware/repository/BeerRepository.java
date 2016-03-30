@@ -10,5 +10,5 @@ public interface BeerRepository extends CrudRepository<Beer, Integer>{
 
 	public Beer save(Beer beer);
 	
-	public Beer findByBeerId(Integer id);
+	public Beer findById(Integer id);
 }
