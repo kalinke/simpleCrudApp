@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.beerware.domain.Beer;
 
-@Repository
 public interface BeerRepository extends CrudRepository<Beer, Integer>{
 
 	public Beer save(Beer beer);

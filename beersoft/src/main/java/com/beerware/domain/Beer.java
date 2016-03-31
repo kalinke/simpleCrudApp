@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Beer {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
 	private String name;

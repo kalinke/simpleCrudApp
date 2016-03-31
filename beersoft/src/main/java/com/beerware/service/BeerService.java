@@ -1,5 +1,6 @@
 package com.beerware.service;
 	
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.beerware.domain.Beer;
@@ -8,6 +9,7 @@ import com.beerware.repository.BeerRepository;
 @Service
 public class BeerService {
 
+	@Autowired
 	private BeerRepository beerRepository;
 	
 	public Beer saveBeer(Beer beer){
