@@ -1,29 +1,41 @@
 package com.simplecrudapp.service.impl;
 	
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.simplecrudapp.dao.UserDAO;
 import com.simplecrudapp.domain.User;
 import com.simplecrudapp.service.UserService;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
 	@Autowired
-	private UserDAO userRepository;
+	private UserDAO userDAO;
 	
-	public User save(User user){
-		return userRepository.save(user);
+	public Integer save(User user){
+		return userDAO.save(user);
 	}
 	
 	public User getById(Integer id){
-		return userRepository.findById(id);
+		return userDAO.findById(id);
 	}
 	
 	public List<User> listUsers(){
-		return userRepository.list();
+		return userDAO.list();
+	}
+
+
+	public void update(User user) {
+		userDAO.update(user);
+	}
+
+	public void delete(User user) {
+		userDAO.delete(user);
 	}
 }

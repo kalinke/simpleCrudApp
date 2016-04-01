@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.simplecrudapp.config" })
+@ComponentScan({"com.simplecrudapp.config"})
 @PropertySource(value = { "classpath:application.properties" })
 public class SimpleCrudAppJPAConfig {
 

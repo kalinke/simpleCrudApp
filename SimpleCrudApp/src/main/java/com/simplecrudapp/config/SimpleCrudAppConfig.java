@@ -6,6 +6,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration 
 @EnableWebMvc   
-@ComponentScan("com.simplecrudapp") 
+@ComponentScan(basePackages = "com.simplecrudapp") 
 public class SimpleCrudAppConfig {  
 } 

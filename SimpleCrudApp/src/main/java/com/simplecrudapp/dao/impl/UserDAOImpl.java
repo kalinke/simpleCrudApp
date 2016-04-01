@@ -13,12 +13,12 @@ import com.simplecrudapp.domain.User;
 @Repository("userDAO")
 public class UserDAOImpl extends AbstractDAO implements UserDAO {
 
-	public User save(User user) {
-		return save(user);
+	public Integer save(User user) {
+		return (Integer) super.save(user);
 	};
 
     public void updateUser(User user){
-    	update(user);
+    	super.update(user);
     }
 
     public User findById(Integer id) {
@@ -31,5 +31,15 @@ public class UserDAOImpl extends AbstractDAO implements UserDAO {
 	public List<User> list() {
 		Criteria criteria = getSession().createCriteria(User.class);
 		return (List<User>) criteria.list();
+	}
+
+	@Override
+	public void update(User user) {
+		super.update(user);
+	}
+
+	@Override
+	public void delete(User user) {
+		super.delete(user);
 	}
 }

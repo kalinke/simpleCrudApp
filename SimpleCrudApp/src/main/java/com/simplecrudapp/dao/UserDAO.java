@@ -6,9 +6,13 @@ import com.simplecrudapp.domain.User;
 
 public interface UserDAO{
 
-	public User save(User user);
+	Integer save(User user);
 	
-	public User findById(Integer id);
+	User findById(Integer id);
 
-	public List<User> list();
+	List<User> list();
+	
+	void update(User user);
+
+	void delete(User user);
 }

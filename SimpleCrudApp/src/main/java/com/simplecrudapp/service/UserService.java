@@ -6,9 +6,13 @@ import com.simplecrudapp.domain.User;
 
 public interface UserService {
 	
-	public User save(User user);
+	Integer save(User user);
 	
-	public User getById(Integer id);
+	User getById(Integer id);
 	
-	public List<User> listUsers();
+	List<User> listUsers();
+
+	void update(User user);
+
+	void delete(User user);
 }
