@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.simplecrudapp.domain.User;
-import com.simplecrudapp.service.UserService;
+import com.simplecrudapp.service.impl.UserServiceImpl;
 
 @RestController
 @RequestMapping("/beer")
 public class UserResource {
 
 	@Autowired
-	private UserService service;
+	private UserServiceImpl service;
 
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> saveUser(@RequestBody User user) {
