@@ -19,6 +19,8 @@ public class User {
 	private Date birth;
 	
 	private String address;
+
+	private String email;
 	
 	public int getId() {
 		return id;
@@ -44,18 +46,23 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((address == null) ? 0 : address.hashCode());
 		result = prime * result + ((birth == null) ? 0 : birth.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
-	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -74,6 +81,11 @@ public class User {
 			if (other.birth != null)
 				return false;
 		} else if (!birth.equals(other.birth))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
 			return false;
 		if (id != other.id)
 			return false;

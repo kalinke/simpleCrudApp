@@ -9,7 +9,8 @@ App.controller('UserController', [
 				id : null,
 				name : '',
 				address : '',
-				birth : ''
+				birth : '',
+				email : ''
 			};
 			self.users = [];
 
@@ -79,7 +80,8 @@ App.controller('UserController', [
 					id : null,
 					name : '',
 					address : '',
-					birth : ''
+					birth : '',
+					email : ''
 				};
 				$scope.myForm.$setPristine(); // reset Form
 			};
