@@ -26,12 +26,12 @@
 - Efetuar a configuração do banco de dados e hibernate no arquivo application.properties. 
 - Hibernate está configurado para create-drop então criará as tabelas automáticamente.
 - Acessar a URL http://ip:porta/simplecrudapp/ - o index está mapeado em um controler(IndexController) para redirecionamento para a tela de cadastro.
-- Serviços REST estão na URL http://ip:porta/simplecrudapp/rest
-  - http://ip:porta/simplecrudapp/rest GET retorna a lista de cadastros
-  - http://ip:porta/simplecrudapp/rest/{id} GET retorna o usuário daquele id
-  - http://ip:porta/simplecrudapp/rest POST(user) cria um novo usário
-  - http://ip:porta/simplecrudapp/rest/{id} PUT(user) faz update do usuário
-  - http://ip:porta/simplecrudapp/rest/{id} DELETE(id) deleta o usuário.
+- Serviços REST estão na URL http://ip:porta/simplecrudapp/user
+  - http://ip:porta/simplecrudapp/user GET retorna a lista de cadastros
+  - http://ip:porta/simplecrudapp/user/{id} GET retorna o usuário daquele id
+  - http://ip:porta/simplecrudapp/user POST(user) cria um novo usário
+  - http://ip:porta/simplecrudapp/user/{id} PUT(user) faz update do usuário
+  - http://ip:porta/simplecrudapp/user/{id} DELETE(id) deleta o usuário.
 
 # Testes 
 - A serem criados.
