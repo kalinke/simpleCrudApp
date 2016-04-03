@@ -6,18 +6,20 @@
   - Angular JS montar a interface html se comunicando com os controller REST
   - O banco de dados e o servidor de aplicação utilizados podem ser qualquer um
 
-Maven 3.3.3 para o gerenciamento de dependências. 
-Tomcat 7 e banco de dados MySql 5.
+# Configurações e comentários
 
-Utilizei Spring 4.2.5.RELEASE + Hibernate 5.1.0.Final + Jackson(parse) 2.6.3 com Java 1.7.
+- Maven 3.3.3 para o gerenciamento de dependências. 
+- Tomcat 7 e banco de dados MySql 5.
 
-Como utilizei Spring versão 4 achei mais coerente fazer a configuração do Spring e Beans com @Annotations ao invés de utilizar .xml. 
+- Utilizei Spring 4.2.5.RELEASE + Hibernate 5.1.0.Final + Jackson(parse) 2.6.3 com Java 1.7.
 
-A configuração de banco de dados e hibenate se encontra no application.properties do projeto. 
+-Como utilizei Spring versão 4 achei mais coerente fazer a configuração do Spring e Beans com @Annotations ao invés de utilizar .xml. 
 
-A tela consume os serviços rest com Angular conforme solicitado e utilizei alguma coisa de bootstrap para facilitar e também ficar um pouco mais legível. 
+- A configuração de banco de dados e hibenate se encontra no application.properties do projeto. 
 
-Não fiz tratamento de exceções nesse momento, fiz algumas validações na tela com o próprio angular e tentei dar algum tratamento ao retorno HTTP na camada rest. 
+- A tela consume os serviços rest com Angular conforme solicitado e utilizei alguma coisa de bootstrap para facilitar e também ficar um pouco mais legível. 
+
+- Não fiz tratamento de exceções nesse momento, fiz algumas validações na tela com o próprio angular e tentei dar algum tratamento ao retorno HTTP na camada rest. 
 
 # Uso
 
