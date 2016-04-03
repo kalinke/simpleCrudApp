@@ -1,10 +1,10 @@
 # Geral
 
  - Montar uma pequena aplicação java web, com as funcionalidades de um crud web simples, usando as seguintes tecnologias:
- Hibernate para persistência dos dados e consultas
- Spring MVC para implementar o controller REST
- Angular JS montar a interface html se comunicando com os controller REST
- O banco de dados e o servidor de aplicação utilizados podem ser qualquer um
+  - Hibernate para persistência dos dados e consultas
+  - Spring MVC para implementar o controller REST
+  - Angular JS montar a interface html se comunicando com os controller REST
+  - O banco de dados e o servidor de aplicação utilizados podem ser qualquer um
 
 Maven 3.3.3 para o gerenciamento de dependências. 
 Tomcat 7 e banco de dados MySql 5.
