@@ -22,27 +22,27 @@ App.controller('UserController', [
 			};
 
 			self.createUser = function(user) {
-				UserService.createUser(user).then(self.fetchAllUsers,
+				UserService.createUser(user).then(self.listUsers,
 						function(errResponse) {
 							console.error('Error creating User.');
 						});
 			};
 
 			self.updateUser = function(user, id) {
-				UserService.updateUser(user, id).then(self.fetchAllUsers,
+				UserService.updateUser(user, id).then(self.listUsers,
 						function(errResponse) {
 							console.error('Error updating User.');
 						});
 			};
 
 			self.deleteUser = function(id) {
-				UserService.deleteUser(id).then(self.fetchAllUsers,
+				UserService.deleteUser(id).then(self.listUsers,
 						function(errResponse) {
 							console.error('Error deleting User.');
 						});
 			};
 
-			self.fetchAllUsers();
+			self.listUsers();
 
 			self.submit = function() {
 				if (self.user.id == null) {

@@ -23,7 +23,6 @@
       .email.ng-dirty.ng-invalid-email {
           background-color: yellow;
       }
-
     </style>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
      <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
@@ -39,26 +38,34 @@
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="file">Name</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.user.username" name="uname" class="username form-control input-sm" placeholder="Enter your name" required ng-minlength="3"/>
+                                  <input type="text" ng-model="ctrl.user.name" name="uname" class="username form-control input-sm" placeholder="Enter your name" required ng-minlength="5"/>
                                   <div class="has-error" ng-show="myForm.$dirty">
                                       <span ng-show="myForm.uname.$error.required">This is a required field</span>
-                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
+                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 5</span>
                                       <span ng-show="myForm.uname.$invalid">This field is invalid </span>
                                   </div>
                               </div>
                           </div>
                       </div>
-                        
                       
                       <div class="row">
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="file">Address</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.user.address" class="form-control input-sm" placeholder="Enter your Address. [This field is validation free]"/>
+                                  <input type="text" ng-model="ctrl.user.address" class="form-control input-sm" placeholder="Enter Address"/>
                               </div>
                           </div>
                       </div>
-
+                     
+                     <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="file">Birth date</label>
+                              <div class="col-md-7">
+                                  <input type="date" ng-model="ctrl.user.birth" name="birth" class="form-control input-smm"/>
+                              </div>
+                          </div>
+                      </div>
+                      
                       <div class="row">
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="file">Email</label>
@@ -92,17 +99,20 @@
                               <th>Name</th>
                               <th>Address</th>
                               <th>Birth</th>
+                              <th>Email</th>
                               <th width="20%"></th>
                           </tr>
                       </thead>
                       <tbody>
                           <tr ng-repeat="u in ctrl.users">
                               <td><span ng-bind="u.id"></span></td>
-                              <td><span ng-bind="u.username"></span></td>
+                              <td><span ng-bind="u.name"></span></td>
                               <td><span ng-bind="u.address"></span></td>
+                              <td><span>{{u.birth | date: "dd/MM/yyyy"}}</span></td>
                               <td><span ng-bind="u.email"></span></td>
                               <td>
-                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
+                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  
+                              <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
                               </td>
                           </tr>
                       </tbody>
