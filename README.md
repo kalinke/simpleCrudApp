@@ -13,8 +13,7 @@
 
 - Utilizei Spring 4.2.5.RELEASE + Hibernate 5.1.0.Final + Jackson(parse) 2.6.3 com Java 1.7.
 
--Como utilizei Spring versão 4 achei mais coerente fazer a configuração do Spring e Beans com @Annotations ao invés de utilizar .xml. 
-
+- Como utilizei Spring versão 4 achei mais coerente fazer a configuração do Spring e Beans com @Annotations ao invés de utilizar .xml. 
 - A configuração de banco de dados e hibenate se encontra no application.properties do projeto. 
 
 - A tela consume os serviços rest com Angular conforme solicitado e utilizei alguma coisa de bootstrap para facilitar e também ficar um pouco mais legível. 
