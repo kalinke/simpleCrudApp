@@ -9,7 +9,7 @@
 # Configurações e comentários
 
 - Maven 3.3.3 para o gerenciamento de dependências. 
-- Tomcat 7 e banco de dados MySql 5.
+- Tomcat 8 e banco de dados MySql 5.
 
 - Utilizei Spring 4.2.5.RELEASE + Hibernate 5.1.0.Final + Jackson(parse) 2.6.3 com Java 1.7.
 
