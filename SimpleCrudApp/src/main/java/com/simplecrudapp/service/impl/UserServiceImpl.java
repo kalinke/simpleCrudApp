@@ -1,6 +1,5 @@
 package com.simplecrudapp.service.impl;
 	
-import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +29,19 @@ public class UserServiceImpl implements UserService {
 		return userDAO.list();
 	}
 
-
 	public void update(User user) {
 		userDAO.update(user);
 	}
 
 	public void delete(User user) {
 		userDAO.delete(user);
+	}
+
+	public UserDAO getUserDAO() {
+		return userDAO;
+	}
+
+	public void setUserDAO(UserDAO userDAO) {
+		this.userDAO = userDAO;
 	}
 }
