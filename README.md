@@ -34,4 +34,20 @@
   - http://ip:porta/simplecrudapp/user/{id} DELETE(id) deleta o usuário.
 
 # Testes 
-- A serem criados.
+- Criei alguns testes unitários com mock para a camada de serviço e alguns testes de integração para o serviço rest.
+- /src/test/java
+
+
+# Build: 
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.429 s
+[INFO] Finished at: 2016-04-04T11:30:35-03:00
+[INFO] Final Memory: 20M/211M
+[INFO] ------------------------------------------------------------------------
