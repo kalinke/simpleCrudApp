@@ -60,6 +60,7 @@ App.controller('UserController', [
 				console.log('id to be edited', id);
 				for (var i = 0; i < self.users.length; i++) {
 					if (self.users[i].id == id) {
+						self.users[i].birth = new Date(self.users[i].birth);
 						self.user = angular.copy(self.users[i]);
 						break;
 					}
