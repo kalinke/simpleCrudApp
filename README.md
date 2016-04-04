@@ -40,8 +40,7 @@
 
 # Build: 
 
-Results :
-
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
-[INFO] BUILD SUCCESS
-[INFO] Total time: 15.429 s
+- Results :
+ - Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+ - [INFO] BUILD SUCCESS
+ - [INFO] Total time: 15.429 s
