@@ -22,7 +22,7 @@
 
 # Uso
 
-- Criar o pacote WAR com o maven (mvn clean install).
+- Criar o pacote WAR com o maven (mvn clean install ou mvn package).
 - Efetuar a configuração do banco de dados e hibernate no arquivo application.properties. 
 - Hibernate está configurado para create-drop então criará as tabelas automáticamente.
 - Acessar a URL http://ip:porta/simplecrudapp/ - o index está mapeado em um controler(IndexController) para redirecionamento para a tela de cadastro.
